@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./학사안내_공통.css">
+    <style>
+        .faq-section {
+            width: 930px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* 카테고리 헤더 */
+        .faq-category {
+            background: #f7f9fc;
+            border-bottom: 1px solid #ccc;
+            padding: 8px 12px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #145074;
+            border-top: 3px solid #145074;
+        }
+
+        /* 각 항목 박스 */
+        .faq-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 10px 12px;
+        }
+
+        /* Q / A 라벨 */
+        .faq-item .label {
+            width: 24px;
+            height: 24px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        .faq-item.q .label {
+            background: #3F97F6;   /* 파란색 */
+        }
+
+        .faq-item.a .label {
+            background: #888;      /* 회색 */
+        }
+
+        /* 질문 / 답변 텍스트 */
+        .faq-item .text {
+            flex: 1;
+            line-height: 1.5;
+        }
+    </style>  
+</head>
+<body>
+    <div class="topbar">
+        <a href="#">HOME</a>
+        <a href="#">사이트맵</a>
+        <a href="#">로그인</a>
+        <a href="#">학생지원</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <span><img src="./images/header_logo.png" alt="그린대학교 로고"></span>
+        </div>
+        <nav>
+            <ul>
+                <li>대학소개
+                    <ul>
+                        <li>총장 인사말</li>
+                        <li>교육이념</li>
+                        <li>연혁</li>
+                        <li>조직도</li>
+                        <li>오시는길</li>
+                    </ul>
+                </li>
+                <li>입학안내
+                    <ul>
+                        <li>공지사항</li>
+                        <li>모집요강</li>
+                        <li>입시일정</li>
+                        <li>합격자발표</li>
+                    </ul>
+                </li>
+                <li>대학·대학원
+                    <ul>
+                        <li>인문사회대학</li>
+                        <li>자연과학대학</li>
+                        <li>공과대학</li>
+                        <li>사회과학대학</li>
+                        <li>대학원</li>
+                    </ul>
+                </li>
+                <li>학사안내
+                    <ul>
+                        <li>공지사항</li>
+                        <li>학사일정</li>
+                        <li>수업지원</li>
+                        <li>장학</li>
+                        <li>수료 및 졸업</li>
+                        <li>자주하는 질문</li>
+                    </ul>
+                </li>
+                <li>대학생활
+                    <ul>
+                        <li>학생서비스</li>
+                        <li>동아리/스터디</li>
+                        <li>식단안내</li>
+                        <li>시설이용</li>
+                    </ul>
+                </li>
+                <li>커뮤니티
+                    <ul>
+                        <li>공지사항</li>
+                        <li>뉴스 및 알림</li>
+                        <li>취업정보</li>
+                        <li>자유게시판</li>
+                        <li>질문 & 답변</li>
+                        <li>자료실</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-content">
+            <span class="home-icon">
+                <a href="#">
+                    <svg xmlns="./images/ico-home.png" height="16" viewBox="0 -960 960 960" width="16" fill="#333333">
+                        <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+                    </svg>
+                </a>
+            </span>
+            <span class="path-divider"> > </span>
+            <a href="#">학생지원</a>
+            <span class="path-divider"> > </span>
+            <a href="#">학사일정</a>
+        </div>
+    </div>
+
+    <!-- ===========================
+         본문 (대학생활 사이드바 + 콘텐츠)
+    ============================ -->
+    <div class="container">
+        <aside class="sidebar">
+            <h2>대학생활</h2>
+            <ul>
+                <li class="active">학생회 소개</li>
+                <li>동아리/스터디</li>
+                <li>식단안내</li>
+                <li>갤러리</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>학생회 소개</h2>
+            <hr style="border: none; border-top: 3px solid #000; margin: 5px 0 20px 0;">
+                <div class="faq-section">
+                    <div class="faq-category">휴·복학 관련</div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">일반휴학 연장은 몇 학기까지 가능한가요?</span></div>
+                    <div class="faq-item a"><span class="label">A</span><span class="text">휴학연장은 1년에 2학기 가능하고 총 6학기 휴학 가능합니다.</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">복학하려고 하는데 어떻게 신청하나요?</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">등록금 납부해서 등록 후 일반 휴학 가능한가요? 환불은 언제 되나요?</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">군휴학 내려면 임명통지서 말고 어떤 서류가 필요하나요?</span></div>
+                </div>
+
+                <div class="faq-section">
+                    <div class="faq-category">교과 및 학사 관련</div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">학과별 교과과정과 학사안내를 확인하고 싶은데, 어떻게 확인할 수 있나요?</span></div>
+                    <div class="faq-item a"><span class="label">A</span><span class="text">홈페이지 내 대학요람(대학생활 안내)을 통해 해당 입학년도, 해당학과의 교과과정과 학사안내를 확인하세요.</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">부·복수전공 취소 또는 부전공 전환 신청은 어떻게 하나요?</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">수강 신청은 어떻게 하나요?</span></div>
+                </div>
+
+                <div class="faq-section">
+                    <div class="faq-category">수강신청 관련</div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">4학년 2학기에도 최소 12학점을 수강해야 하나요?</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">9학기 이상 등록자는 수강신청학점에 따라 등록금이 달라지나요?</span></div>
+                    <div class="faq-item q"><span class="label">Q</span><span class="text">수강 신청은 어떻게 하나요?</span></div>
+                    <div class="faq-item a"><span class="label">A</span><span class="text">수강신청 안내를 참고하시기 바랍니다.</span></div>
+                </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">통합정보시스템</a></li>
+                <li><a href="#">학사일정</a></li>
+                <li><a href="#">주요업무 연락</a></li>
+                <li><a href="#">교내공지사항</a></li>
+            </ul>
+        </div>
+        <div class="footer-mid">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="./images/footer_logo.png" alt="그린대학교 로고">
+                </div>
+                <div class="address-info">
+                    <span>그린대학교</span>
+                    <span>[12345]부산광역시 부산진구 부전대로 123 그린대학교 / 대표전화 : 051-123-1000</span>
+                    <span>입학안내 : 051-123-1302 팩스 : 051-123-3333</span>
+                </div>
+            </div>
+            <div class="family-site-wrap">
+                <div class="family-site-btn">
+                    주요사이트
+                    <div class="arrow"></div>
+                </div>
+                <ul class="family-site-list">
+                    <li><a href="#">그린대학교</a></li>
+                    <li><a href="#">컴퓨터과학과</a></li>
+                    <li><a href="#">학생지원센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">copyright © Green University All rights reserved.</p>
+    </footer>
+</body>
+</html>
