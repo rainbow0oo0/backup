@@ -178,6 +178,8 @@ ON
 
 drop TABLE notice;
 
+//////////////////////////////////////////////////
+
 create table notice (
     setN_id        NUMBER         PRIMARY KEY,           -- 번호
     setN_title     VARCHAR2(200)  NOT NULL,              -- 제목
@@ -192,17 +194,11 @@ CREATE SEQUENCE seq_notice
     INCREMENT BY 1
     NOCACHE;
     
-insert into notic (setN_id, setN_title, setN_content, setN_regdate, setN_views) values(seq_notice.NEXTVAL, '2025학년도 신입학 3차 추가모집 모집요강 및 모집인원 공지', '담당자', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 160);
+insert into notice (n_id, n_title, n_content, n_regdate, n_views)
+values (seq_notice.nextval, '2025학년도 신입학 3차 추가모집 모집요강 및 모집인원 공지', '담당자', to_date('2024-04-09', 'yyyy-mm-dd'), 160);
 
-insert into notic (setN_id, setN_title, setN_content, setN_regdate, setN_views) values(seq_notice.NEXTVAL, '2025학년도 신입학 2차 추가모집 모집요강 및 모집인원 공지', '담당자', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 160);
+insert into notice (n_id, n_title, n_content, n_regdate, n_views)
+values (seq_notice.nextval, '2025학년도 신입학 2차 추가모집 모집요강 및 모집인원 공지', '담당자', to_date('2024-04-09', 'yyyy-mm-dd'), 160);
 
-insert into notic (setN_id, setN_title, setN_content, setN_regdate, setN_views) values();
-
-INSERT INTO notice (notice_id, title, writer, regdate, hit)
-VALUES (seq_notice.NEXTVAL, '2025학년도 신입학 3차 추가모집 모집요강 및 모집인원 공지', '담당자', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 160);
-
-INSERT INTO notice (notice_id, title, writer, regdate, hit)
-VALUES (seq_notice.NEXTVAL, '2025학년도 신입학 2차 추가모집 모집요강 및 모집인원 공지', '담당자', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 160);
-
-INSERT INTO notice (notice_id, title, writer, regdate, hit)
-VALUES (seq_notice.NEXTVAL, '2025학년도 신입학 수시모집 모집요강 및 모집인원 공지', '담당자', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 160);
+insert into notice (n_id, n_title, n_content, n_regdate, n_views)
+values (seq_notice.nextval, '2025학년도 신입학 수시모집 모집요강 및 모집인원 공지', '담당자', to_date('2024-04-09', 'yyyy-mm-dd'), 160);
